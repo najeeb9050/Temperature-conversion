@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Fahrenheit Converter </title>
     <link rel="stylesheet" href="styles.css">
-    <title>Celsius to Fahrenheit Converter</title>
 </head>
-<body>
-    <div class="converter">
-        <h1>Celsius to Fahrenheit Converter</h1>
-        <div class="input-container">
-            <label for="celsius">Celsius:</label>
-            <input type="number" id="celsius" placeholder="Enter Celsius" step="0.01">
-        </div>
-        <div class="result-container">
-            <label for="fahrenheit">Fahrenheit:</label>
-            <span id="fahrenheit">0</span>
-        </div>
-        <button id="convertButton">Convert</button>
-    </div>
 
-    <script src="script.mjs"></script>
+<body>
+    <h1>Temperature Converter</h1>
+    <div class="converter">
+        <h2 style="color: rgb(173,167, 167); text-align: center;letter-spacing: 6px;font-size: 25px;"></h2>
+        <section class="container">
+            <input type="number" id="celsius" oninput="celToFar()" />
+            <label for="celsius">celsius (C) </label>
+
+        </section>
+        <section class="container">
+            <input type="number" id="fahrenheit" oninput="farToCel()" />
+            <label for="fahrenheit">Fahrenheit (F) </label>
+        </section>
+
+    </div>
+    <script src="./script.mjs"></script>
+
 </body>
+
 </html>
